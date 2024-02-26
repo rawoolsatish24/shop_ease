@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShopEase.SignupPage"
+             Title="Signup">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <StackLayout Padding="20">
+                <Label Text="Signup" FontSize="Title" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" />
+
+                <Label Text="Already have account, click here to login" TextColor="Blue" FontAttributes="Bold" Padding="20" FontSize="Caption" TextDecorations="Underline" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="goto_login" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+                <StackLayout Margin="10,5,10,0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Entry x:Name="first_name" Text="" MaxLength="25" TextChanged="name_TextChanged" WidthRequest="250" Placeholder="First Name" FontSize="Body" Margin="10,5,5,0" />
+                    <Entry x:Name="last_name" Text="" MaxLength="25" TextChanged="name_TextChanged" WidthRequest="250" Placeholder="Last Name" FontSize="Body" Margin="5,5,10,0" />
+                </StackLayout>
+
+                <StackLayout Margin="10,5,10,0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Entry x:Name="email" Text="" MaxLength="100" WidthRequest="250" TextChanged="name_TextChanged" Placeholder="Email" FontSize="Body" Margin="10,5,5,0" />
+                    <Entry x:Name="mobile" Text="" MaxLength="21" WidthRequest="250" TextChanged="name_TextChanged" Placeholder="Mobile" FontSize="Body" Margin="5,5,10,0" />
+                </StackLayout>
+
+                <Entry x:Name="address" Text="" HorizontalOptions="CenterAndExpand" MaxLength="100" WidthRequest="510" Placeholder="Address" FontSize="Body" Margin="5,5,5,0" />
+
+                <StackLayout Margin="10,5,10,0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Entry x:Name="password" Text="" MaxLength="15" WidthRequest="250" TextChanged="name_TextChanged" Placeholder="Password" FontSize="Body" IsPassword="True" Margin="10,5,5,0" />
+                    <Entry x:Name="confirm_password" Text="" MaxLength="15" WidthRequest="250" TextChanged="name_TextChanged" Placeholder="Confirm Password" FontSize="Body" IsPassword="True" Margin="5,5,10,0" />
+                </StackLayout>
+
+                <StackLayout Margin="10,5,10,0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Label Text="Account type:" VerticalOptions="CenterAndExpand" FontAttributes="Bold" Margin="0, 0, 5, 0" />
+                    <RadioButton x:Name="consumer" VerticalOptions="CenterAndExpand" FontAttributes="Bold" Margin="0, 7, 0, 0" IsChecked="True" Value="C" Content="Consumer" GroupName="user_type" />
+                    <RadioButton x:Name="retailer" VerticalOptions="CenterAndExpand" FontAttributes="Bold" Margin="0, 7, 0, 0" Value="R" Content="Retailer" GroupName="user_type" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="40, 0, 40, 30">
+                    <Button Text="Reset" WidthRequest="80" HeightRequest="20" BackgroundColor="Red" FontAttributes="Bold" FontSize="Body" x:Name="reset" Clicked="reset_Clicked" Margin="0, 0, 5, 0" />
+                    <Button Text="Signup" WidthRequest="80" HeightRequest="20" BackgroundColor="Green" FontAttributes="Bold" FontSize="Body" x:Name="signup" Clicked="signup_Clicked" Margin="5, 0, 0, 0" />
+                </StackLayout>
+
+                <Label x:Name="error" TextColor="Red" FontAttributes="Bold" FontSize="Body" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" />
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShopEase.ProfilePage"
+             Title="Profile">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <StackLayout Padding="20">
+                <Label Text="Profile" FontSize="Title" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" />
+
+                <StackLayout Margin="10,5,10,0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Entry x:Name="first_name" Text="" MaxLength="25" TextChanged="name_TextChanged" WidthRequest="250" Placeholder="First Name" FontSize="Body" Margin="10,5,5,0" />
+                    <Entry x:Name="last_name" Text="" MaxLength="25" TextChanged="name_TextChanged" WidthRequest="250" Placeholder="Last Name" FontSize="Body" Margin="5,5,10,0" />
+                </StackLayout>
+
+                <StackLayout Margin="10,5,10,0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Entry x:Name="email" Text="" MaxLength="100" WidthRequest="250" TextChanged="name_TextChanged" Placeholder="Email" FontSize="Body" Margin="10,5,5,0" />
+                    <Entry x:Name="mobile" Text="" MaxLength="21" WidthRequest="250" TextChanged="name_TextChanged" Placeholder="Mobile" FontSize="Body" Margin="5,5,10,0" />
+                </StackLayout>
+
+                <Entry x:Name="address" Text="" HorizontalOptions="CenterAndExpand" MaxLength="100" WidthRequest="510" Placeholder="Address" FontSize="Body" Margin="5,5,5,0" />
+
+                <Button Text="Update profile" Clicked="update_profile_Clicked" WidthRequest="170" HeightRequest="20" BackgroundColor="Green" FontAttributes="Bold" FontSize="Body" x:Name="update_profile" Margin="40, 20, 40, 20" />
+                
+                <StackLayout Margin="10,0,10,0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Entry x:Name="old_password" Text="" MaxLength="15" WidthRequest="170" TextChanged="name_TextChanged" Placeholder="Password" FontSize="Body" IsPassword="True" Margin="10,5,5,0" />
+                    <Entry x:Name="new_password" Text="" MaxLength="15" WidthRequest="170" TextChanged="name_TextChanged" Placeholder="Password" FontSize="Body" IsPassword="True" Margin="5,5,5,0" />
+                    <Entry x:Name="confirm_password" Text="" MaxLength="15" WidthRequest="170" TextChanged="name_TextChanged" Placeholder="Confirm Password" FontSize="Body" IsPassword="True" Margin="5,5,10,0" />
+                </StackLayout>
+
+                <Button Text="Update password" Clicked="update_password_Clicked" WidthRequest="170" HeightRequest="20" BackgroundColor="Green" FontAttributes="Bold" FontSize="Body" x:Name="update_password" Margin="40, 20, 40, 20" />
+
+                <Label x:Name="error" TextColor="Red" FontAttributes="Bold" FontSize="Body" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" />
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

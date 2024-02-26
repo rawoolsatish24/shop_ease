@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ShopEase.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ShopEase"
+    Shell.TabBarForegroundColor="Blue"
+    Shell.TabBarBackgroundColor="#ADD8E6"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab Title="Welcome" x:Name="welcome_splash_screen"><ShellContent Title="Welcome" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" /></Tab>
+        <Tab Title="Login" IsVisible="False" x:Name="login_page"><ShellContent Title="Login" ContentTemplate="{DataTemplate local:LoginPage}" Route="LoginPage" /></Tab>
+        <Tab Title="Signup" IsVisible="False" x:Name="signup_page"><ShellContent Title="Signup" ContentTemplate="{DataTemplate local:SignupPage}" Route="SignupPage" /></Tab>
+        <Tab Title="Dashboard" IsVisible="False" x:Name="retailer_dashboard_page"><ShellContent Title="Dashboard" ContentTemplate="{DataTemplate local:RetailerDashboardPage}" Route="RetailerDashboardPage" /></Tab>
+        <Tab Title="Manage Products" IsVisible="False" x:Name="manage_products_page"><ShellContent Title="Manage Products" ContentTemplate="{DataTemplate local:ManageProductsPage}" Route="ManageProductsPage" /></Tab>
+        <Tab Title="Manage Orders" IsVisible="False" x:Name="manage_orders_page"><ShellContent Title="Manage Orders" ContentTemplate="{DataTemplate local:ManageOrdersPage}" Route="ManageOrdersPage" /></Tab>
+        <Tab Title="Dashboard" IsVisible="False" x:Name="consumer_dashboard_page"><ShellContent Title="Dashboard" ContentTemplate="{DataTemplate local:ConsumerDashboardPage}" Route="ConsumerDashboardPage" /></Tab>
+        <Tab Title="Products" IsVisible="False" x:Name="products_page"><ShellContent Title="Products" ContentTemplate="{DataTemplate local:ProductsPage}" Route="ProductsPage" /></Tab>
+        <Tab Title="Orders History" IsVisible="False" x:Name="orders_history_page"><ShellContent Title="Orders History" ContentTemplate="{DataTemplate local:OrdersHistoryPage}" Route="OrdersHistoryPage" /></Tab>
+        <Tab Title="Profile" IsVisible="False" x:Name="profile_page"><ShellContent Title="Profile" ContentTemplate="{DataTemplate local:ProfilePage}" Route="ProfilePage" /></Tab>
+        <Tab Title="About" IsVisible="False" x:Name="about_page"><ShellContent Title="About" ContentTemplate="{DataTemplate local:AboutPage}" Route="AboutPage" /></Tab>
+    </TabBar>
+
+</Shell>

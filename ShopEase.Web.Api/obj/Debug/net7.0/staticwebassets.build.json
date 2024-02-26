@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "HAH5vl9KQWSRtoJAQDmwU/ARPJlXVx9lN7ooIHi/15s=",
+  "Source": "ShopEase.Web.Api",
+  "BasePath": "_content/ShopEase.Web.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

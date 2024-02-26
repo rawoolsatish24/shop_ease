@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShopEase.LoginPage"
+             Title="Login">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <StackLayout Padding="20">
+                <Label Text="Login" FontSize="Title" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" />
+
+                <Label Text="New user, create your account here" TextColor="Blue" FontAttributes="Bold" Padding="20" FontSize="Caption" TextDecorations="Underline" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="goto_sign_up" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+                <Entry x:Name="email" Text="" MaxLength="100" WidthRequest="400" Placeholder="Email" FontSize="Body" Keyboard="Email" Margin="10,5,10,0" />
+                <Entry x:Name="password" Text="" MaxLength="15" WidthRequest="400" Placeholder="Password" FontSize="Body" IsPassword="True" Margin="10,5,10,20" />
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="40, 0, 40, 30">
+                    <Button Text="Reset" WidthRequest="80" HeightRequest="20" BackgroundColor="Red" FontAttributes="Bold" FontSize="Body" x:Name="reset" Clicked="reset_Clicked" Margin="0, 0, 5, 0" />
+                    <Button Text="Login" WidthRequest="80" HeightRequest="20" BackgroundColor="Green" FontAttributes="Bold" FontSize="Body" x:Name="login" Clicked="login_Clicked" Margin="5, 0, 0, 0" />
+                </StackLayout>
+
+                <Label x:Name="error" TextColor="Red" FontAttributes="Bold" FontSize="Body" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" />
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

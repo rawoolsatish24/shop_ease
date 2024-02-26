@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShopEase.AboutPage"
+             Title="About">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="!! ShopEase !!" HorizontalTextAlignment="Center" TextColor="Blue" FontSize="Title" FontAttributes="Bold" Padding="20" />
+            <Label FontSize="Body" HorizontalTextAlignment="Center" FontAttributes="Italic" Text="''Welcome to ShopEase, your go-to destination for a seamless and delightful online shopping experience. At ShopEase, we are dedicated to simplifying your shopping journey, offering a wide array of quality products, and ensuring your satisfaction at every step. Our mission is to provide a user-friendly platform where customers can effortlessly explore, discover, and purchase the products they love. With a commitment to reliability, convenience, and innovation, ShopEase is here to redefine the way you shop online. Join us on this exciting venture, and let's make your shopping experience more enjoyable than ever.''" />
+        </StackLayout>
+    </ScrollView>
+    
+</ContentPage>

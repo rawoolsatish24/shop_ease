@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net7.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ShopEase
+build_property.ProjectDir = D:\Studypool\ShopEase\Commit6\ShopEase\ShopEase\
+
+[D:/Studypool/ShopEase/Commit6/ShopEase/ShopEase/AboutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.AboutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AboutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AboutPage.xaml
+
+[D:/Studypool/ShopEase/Commit6/ShopEase/ShopEase/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/Studypool/ShopEase/Commit6/ShopEase/ShopEase/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/Studypool/ShopEase/Commit6/ShopEase/ShopEase/ConsumerDashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.ConsumerDashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ConsumerDashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ConsumerDashboardPage.xaml
+
+[D:/Studypool/ShopEase/Commit6/ShopEase/ShopEase/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
+
+[D:/Studypool/ShopEase/Commit6/ShopEase/ShopEase/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/Studypool/ShopEase/Commit6/ShopEase/ShopEase/ManageOrdersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.ManageOrdersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ManageOrdersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ManageOrdersPage.xaml
+
+[D:/Studypool/ShopEase/Commit6/ShopEase/ShopEase/ManageProductsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.ManageProductsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ManageProductsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ManageProductsPage.xaml
+
+[D:/Studypool/ShopEase/Commit6/ShopEase/ShopEase/OrdersHistoryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.OrdersHistoryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = OrdersHistoryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = OrdersHistoryPage.xaml
+
+[D:/Studypool/ShopEase/Commit6/ShopEase/ShopEase/ProductsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.ProductsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProductsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProductsPage.xaml
+
+[D:/Studypool/ShopEase/Commit6/ShopEase/ShopEase/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProfilePage.xaml
+
+[D:/Studypool/ShopEase/Commit6/ShopEase/ShopEase/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/Studypool/ShopEase/Commit6/ShopEase/ShopEase/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/Studypool/ShopEase/Commit6/ShopEase/ShopEase/RetailerDashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.RetailerDashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = RetailerDashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = RetailerDashboardPage.xaml
+
+[D:/Studypool/ShopEase/Commit6/ShopEase/ShopEase/SignupPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.SignupPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SignupPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SignupPage.xaml

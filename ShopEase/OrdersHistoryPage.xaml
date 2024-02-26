@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShopEase.OrdersHistoryPage"
+             Title="Orders History">
+
+    <StackLayout Padding="10, 0, 10, 10">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="10">
+            <Button x:Name="load_data" Clicked="load_data_Clicked" Text="Refresh" WidthRequest="120" TextColor="White" BackgroundColor="Blue" FontAttributes="Bold" />
+        </StackLayout>
+        <Frame CornerRadius="5" BackgroundColor="Blue" Padding="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.8*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="3.2*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Id" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="1" Text="Name" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="2" Text="Qty." TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="3" Text="Price" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="4" Text="Net Amount" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="5" Text="Address" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="6" Text="Status" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="7" Text="Order Date" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+            </Grid>
+        </Frame>
+        <ListView x:Name="orders_list" HasUnevenRows="True" SeparatorColor="Green" ItemTapped="orders_list_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="5">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.5*" />
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="0.5*" />
+                                    <ColumnDefinition Width="0.8*" />
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="3.2*" />
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Id}" TextColor="Black" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding ProductName}" TextColor="Black" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="2" Text="{Binding Quantity}" TextColor="Black" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="3" Text="{Binding Price, StringFormat='${0:F2}'}" TextColor="Black" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="4" Text="{Binding TotalAmount, StringFormat='${0:F2}'}" TextColor="Black" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="5" Text="{Binding Address}" TextColor="Black" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="6" Text="{Binding Status}" TextColor="Orange" HorizontalOptions="Start">
+                                    <Label.Triggers>
+                                        <DataTrigger TargetType="Label" Binding="{Binding Status}" Value="PROCESSING">
+                                            <Setter Property="TextColor" Value="Pink" />
+                                        </DataTrigger>
+                                        <DataTrigger TargetType="Label" Binding="{Binding Status}" Value="OUT FOR DEL.">
+                                            <Setter Property="TextColor" Value="Indigo" />
+                                        </DataTrigger>
+                                        <DataTrigger TargetType="Label" Binding="{Binding Status}" Value="DELIVERED">
+                                            <Setter Property="TextColor" Value="Green" />
+                                        </DataTrigger>
+                                        <DataTrigger TargetType="Label" Binding="{Binding Status}" Value="REJECTED">
+                                            <Setter Property="TextColor" Value="Red" />
+                                        </DataTrigger>
+                                        <DataTrigger TargetType="Label" Binding="{Binding Status}" Value="CANCELED">
+                                            <Setter Property="TextColor" Value="Grey" />
+                                        </DataTrigger>
+                                    </Label.Triggers>
+                                </Label>
+                                <Label Grid.Row="0" Grid.Column="7" Text="{Binding OrderDate, StringFormat='{0:dd MMM, yyyy}'}" TextColor="Black" HorizontalOptions="Start" />
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

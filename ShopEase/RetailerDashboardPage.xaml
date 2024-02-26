@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShopEase.RetailerDashboardPage"
+             Title="Dashboard">
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical" Padding="40">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Welcome, FULL NAME" x:Name="full_name" VerticalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Title" />
+                <Button Text="Logout" WidthRequest="80" Clicked="logout_Clicked" HorizontalOptions="EndAndExpand" HeightRequest="20" BackgroundColor="Red" FontAttributes="Bold" FontSize="Body" x:Name="logout" Margin="0, 0, 5, 0" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Account Type:" VerticalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Body" />
+                <Label Text=" Retailer" VerticalOptions="CenterAndExpand" FontSize="Body" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Joining Date:" VerticalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Body" />
+                <Label x:Name="user_joining_date" VerticalOptions="CenterAndExpand" FontSize="Body" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="40" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Frame CornerRadius="5" BackgroundColor="Green" Margin="5">
+                    <StackLayout Orientation="Vertical" WidthRequest="150">
+                        <Label Text="Pending Orders" TextColor="White" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Small" />
+                        <Label Text="0" x:Name="pending_orders" TextColor="White" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="5" BackgroundColor="Green" Margin="5">
+                    <StackLayout Orientation="Vertical" WidthRequest="150">
+                        <Label Text="Total Orders" TextColor="White" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Small" />
+                        <Label Text="0" x:Name="total_orders" TextColor="White" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="5" BackgroundColor="Green" Margin="5">
+                    <StackLayout Orientation="Vertical" WidthRequest="150">
+                        <Label Text="Unique Items" TextColor="White" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Small" />
+                        <Label Text="0" x:Name="unique_items" TextColor="White" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="5" BackgroundColor="Green" Margin="5">
+                    <StackLayout Orientation="Vertical" WidthRequest="150">
+                        <Label Text="Total Sales" TextColor="White" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Small" />
+                        <Label Text="$0" x:Name="total_sales" TextColor="White" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

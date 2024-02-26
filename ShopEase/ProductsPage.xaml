@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShopEase.ProductsPage"
+             Title="Products">
+
+    <StackLayout Padding="10">
+        <StackLayout Orientation="Horizontal" Padding="0, 0, 0, 10">
+            <Entry x:Name="retailer" Text="" IsReadOnly="True" MaxLength="50" HorizontalOptions="FillAndExpand" Margin="0, 0, 5, 0" Placeholder="Product Name" FontSize="Body" />
+            <Entry x:Name="price" Text="0" IsReadOnly="True" MaxLength="5" WidthRequest="80" Margin="5, 0, 5, 0" Placeholder="Price" FontSize="Body" />
+            <Entry x:Name="quantity" Text="1" MaxLength="5" TextChanged="quantity_TextChanged"  WidthRequest="80" Margin="5, 0, 5, 0" Placeholder="Quantity" FontSize="Body" />
+            <Entry x:Name="total" Text="0" IsReadOnly="True" MaxLength="10" WidthRequest="110" Margin="5, 0, 5, 0" Placeholder="Total" FontSize="Body" />
+            <Button x:Name="order" Text="Order" Clicked="order_Clicked" Margin="5, 0, 5, 0" WidthRequest="90" TextColor="White" BackgroundColor="Green" FontAttributes="Bold" />
+            <Button x:Name="reset" Clicked="reset_Clicked" Text="Reset" Margin="5, 0, 5, 0" WidthRequest="90" TextColor="White" BackgroundColor="Red" FontAttributes="Bold" />
+            <Button x:Name="load_data" Clicked="load_data_Clicked" Text="Refresh" Margin="5, 0, 0, 0" WidthRequest="90" TextColor="White" BackgroundColor="Blue" FontAttributes="Bold" />
+        </StackLayout>
+        <Entry x:Name="address" HorizontalOptions="FillAndExpand" Margin="0, 0, 0, 10" Placeholder="Address" FontSize="Body" />
+        <Frame CornerRadius="5" BackgroundColor="Blue" Padding="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.05*" />
+                    <ColumnDefinition Width="0.25*" />
+                    <ColumnDefinition Width="0.45*" />
+                    <ColumnDefinition Width="0.05*" />
+                    <ColumnDefinition Width="0.05*" />
+                    <ColumnDefinition Width="0.1*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Id" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="1" Text="Name" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="2" Text="Description" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="3" Text="Price" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="4" Text="Stock" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+                <Label Grid.Row="0" Grid.Column="5" Text="Creation" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+            </Grid>
+        </Frame>
+        <ListView x:Name="products_list" HasUnevenRows="True" SeparatorColor="Green" ItemTapped="products_list_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="5">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.05*" />
+                                    <ColumnDefinition Width="0.25*" />
+                                    <ColumnDefinition Width="0.45*" />
+                                    <ColumnDefinition Width="0.05*" />
+                                    <ColumnDefinition Width="0.05*" />
+                                    <ColumnDefinition Width="0.1*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Id}" TextColor="Black" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" TextColor="Black" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="2" Text="{Binding Description}" TextColor="Black" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="3" Text="{Binding Price, StringFormat='${0:F2}'}" TextColor="Black" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="4" Text="{Binding Stock}" TextColor="Black" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="5" Text="{Binding CreationDate, StringFormat='{0:dd MMM, yyyy}'}" TextColor="Black" HorizontalOptions="Start" />
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
