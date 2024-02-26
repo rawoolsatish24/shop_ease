@@ -3,10 +3,19 @@
 
 ## Table of Contents
 - [Description](#description)
+- [Tools & Technologies](#tools--technologies)
 - [Screenshots](#screenshots)
 
 ## Description
 <p align="justify" width="100%">The <strong>ShopEase</strong> is a comprehensive e-commerce platform built on MAUI with C#. This project encompasses a range of essential features for online retail. From user authentication and intuitive UI with login/signup pages to efficient product management and order processing, ShopEase provides a seamless experience for both consumers and retailers. The platform includes interactive dashboards tailored for each user type, displaying key metrics such as total purchases, orders, and earnings for retailers, and purchased items, order history, and account details for consumers. APIs are integrated to facilitate smooth communication with the underlying SQLite database, ensuring data integrity and efficient operations. With ShopEase, managing an online store or shopping for products is made simple and efficient.</p>
+
+## Tools & Technologies
+
+- MAUI
+- C#
+- SQLite
+- ASP.NET Core Open API
+- XAML
 
 ## Screenshots
 
@@ -14,7 +23,7 @@
 *1. Intro splash screen which only stays for a few seconds and then the next login page is displayed*<hr>
 
 ![Screenshot 2](/images/screenshots/2.png)<br />
-*2. Common login page for both types of users such as consumers and retailers. A navigation link is also there for new users to signup*<hr>
+*2. Common login page for both types of users such as consumers and retailers. A navigation link is also there for new users to sign-up*<hr>
 
 ![Screenshot 3](/images/screenshots/3.png)<br />
 *3. Signup page for new users to register. Enter details and select user type*<hr>
