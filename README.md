@@ -12,3 +12,36 @@
 
 ![Screenshot 1](/images/screenshots/1.png)<br />
 *1. Intro splash screen which only stays for a few seconds and then the next login page is displayed*<hr>
+
+![Screenshot 2](/images/screenshots/2.png)<br />
+*2. Common login page for both types of users such as consumers and retailers. A navigation link is also there for new users to signup*<hr>
+
+![Screenshot 3](/images/screenshots/3.png)<br />
+*3. Signup page for new users to register. Enter details and select user type*<hr>
+
+![Screenshot 4](/images/screenshots/4.png)<br />
+*4. Consumer dashboard with few profile details and 3 counters to get orders summary*<hr>
+
+![Screenshot 5](/images/screenshots/5.png)<br />
+*5. Consumer product page where user can select the order and set quantity within the limit of available stock and place order*<hr>
+
+![Screenshot 6](/images/screenshots/6.png)<br />
+*6. Consumer orders history page where the consumer can track their order's current status*<hr>
+
+![Screenshot 7](/images/screenshots/7.png)<br />
+*7. Consumer profile page to view and edit profile details, contact details, or login password*<hr>
+
+![Screenshot 8](/images/screenshots/8.png)<br />
+*8. Common ShopEase's about page with the company's details*<hr>
+
+![Screenshot 9](/images/screenshots/9.png)<br />
+*9. Retailer dashboard with few profile details and 4 counters to get orders summary*<hr>
+
+![Screenshot 10](/images/screenshots/10.png)<br />
+*10. Retailer product page where users can add new products, update product details or stock quantity*<hr>
+
+![Screenshot 11](/images/screenshots/11.png)<br />
+*11. Retailer manage orders page where users can manage orders placed by consumers and update order status*<hr>
+
+![Screenshot 12](/images/screenshots/12.png)<br />
+*12. Retailer profile page to view and edit profile details, contact details, or login password*<hr>
